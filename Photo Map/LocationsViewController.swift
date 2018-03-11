@@ -9,7 +9,7 @@
 import UIKit
 
 protocol LocationsViewControllerDelegate : class {
-    func locationsPickedLocation(controller: LocationsViewController, latitude: NSNumber, longitude: NSNumber)
+    func locationsPickedLocation(controller: LocationsViewController, latitude: NSNumber, longitude: NSNumber, image: UIImage)
 }
 
 class LocationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
@@ -22,6 +22,8 @@ class LocationsViewController: UIViewController, UITableViewDelegate, UITableVie
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    
+     var postImage: UIImage!
 
     var results: NSArray = []
     
@@ -61,7 +63,7 @@ class LocationsViewController: UIViewController, UITableViewDelegate, UITableVie
         let lngString = "\(lng)"
 
         print(latString + " " + lngString)
-        delegate.locationsPickedLocation(controller: self, latitude: lat, longitude: lng)
+        delegate.locationsPickedLocation(controller: self, latitude: lat, longitude: lng, image: postImage)
     }
     
     func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
