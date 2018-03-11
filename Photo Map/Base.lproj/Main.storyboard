@@ -28,6 +28,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLE-lH-yWd">
                                 <rect key="frame" x="112" y="583" width="150" height="64"/>
                                 <state key="normal" image="camera"/>
+                                <connections>
+                                    <action selector="onPhotoButton:" destination="ghP-Ww-KKQ" eventType="touchUpInside" id="twI-NF-46f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -44,6 +47,7 @@
                     <navigationItem key="navigationItem" id="aPF-0T-Ydb"/>
                     <connections>
                         <outlet property="mapView" destination="pGw-XM-xN8" id="gJW-pI-M9c"/>
+                        <outlet property="photoButton" destination="zLE-lH-yWd" id="JEC-bL-bwf"/>
                         <segue destination="eZf-Nb-6PU" kind="push" identifier="tagSegue" id="Tzv-N2-17x"/>
                         <segue destination="WeT-38-qba" kind="push" identifier="fullImageSegue" id="B5X-dM-HfZ"/>
                     </connections>

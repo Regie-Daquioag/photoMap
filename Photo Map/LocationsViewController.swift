@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol LocationsViewControllerDelegate : class {
+    func locationsPickedLocation(controller: LocationsViewController, latitude: NSNumber, longitude: NSNumber)
+}
+
 class LocationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+    
+    weak var delegate : LocationsViewControllerDelegate!
 
     // TODO: Fill in actual CLIENT_ID and CLIENT_SECRET
     let CLIENT_ID = "FY42JG5MLFEW4VFF43SXNRBT2PYCNJY1Q51GZXC0JDYJQLC0"
