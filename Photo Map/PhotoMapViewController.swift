@@ -9,7 +9,13 @@
 import UIKit
 import MapKit
 
-class PhotoMapViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PhotoMapViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,LocationsViewControllerDelegate {
+    
+    
+    func locationsPickedLocation(controller: LocationsViewController, latitude: NSNumber, longitude: NSNumber) {
+
+    }
+    
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var photoButton: UIButton!
@@ -67,7 +73,8 @@ class PhotoMapViewController: UIViewController, UIImagePickerControllerDelegate,
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if(segue.identifier == "tagSegue"){
-            
+            let vc = segue.destination as! LocationsViewController
+            vc.delegate = self
         }
     }
     
