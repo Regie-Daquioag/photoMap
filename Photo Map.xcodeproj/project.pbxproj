@@ -17,6 +17,7 @@
 		228D477019F5DAFF00DE9903 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228D476F19F5DAFF00DE9903 /* LocationsViewController.swift */; };
 		22BB9BD519F5DD21000048C2 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB9BD419F5DD21000048C2 /* LocationCell.swift */; };
 		B9D678266F6949E2A1E2D627 /* Pods_Photo_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3162AF7E7E96EDC177CEBF /* Pods_Photo_Map.framework */; };
+		CDD74F222054C29C0084644A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD74F212054C29C0084644A /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		22BB9BD419F5DD21000048C2 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		2E3162AF7E7E96EDC177CEBF /* Pods_Photo_Map.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Photo_Map.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A0DBCA2D8BC989FA225B44 /* Pods-Photo Map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photo Map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Photo Map/Pods-Photo Map.debug.xcconfig"; sourceTree = "<group>"; };
+		CDD74F212054C29C0084644A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD74F222054C29C0084644A /* MapKit.framework in Frameworks */,
 				B9D678266F6949E2A1E2D627 /* Pods_Photo_Map.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +162,7 @@
 		C53175EB32E8EEC8585BFFB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDD74F212054C29C0084644A /* MapKit.framework */,
 				12B190D8026AA9DA033871B1 /* Pods.framework */,
 				2E3162AF7E7E96EDC177CEBF /* Pods_Photo_Map.framework */,
 			);

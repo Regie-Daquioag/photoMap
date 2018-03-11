@@ -11,8 +11,8 @@ import UIKit
 class LocationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     // TODO: Fill in actual CLIENT_ID and CLIENT_SECRET
-    let CLIENT_ID = "CLIENT_ID GOES HERE"
-    let CLIENT_SECRET = "CLIENT_SECRET GOES HERE"
+    let CLIENT_ID = "FY42JG5MLFEW4VFF43SXNRBT2PYCNJY1Q51GZXC0JDYJQLC0"
+    let CLIENT_SECRET = "XW4VKFYG2FGFO35ZM5ZPJGO3U0QWV3QKAA5HGBF4QTX1OOYD"
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
