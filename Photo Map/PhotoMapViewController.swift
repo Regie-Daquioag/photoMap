@@ -13,7 +13,7 @@ class PhotoMapViewController: UIViewController, UIImagePickerControllerDelegate,
     
     
     func locationsPickedLocation(controller: LocationsViewController, latitude: NSNumber, longitude: NSNumber) {
-
+        navigationController?.popViewController(animated: true)
     }
     
     
