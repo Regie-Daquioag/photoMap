@@ -98,11 +98,9 @@ class LocationsViewController: UIViewController, UITableViewDelegate, UITableVie
                             NSLog("response: \(responseDictionary)")
                             self.results = responseDictionary.value(forKeyPath: "response.venues") as! NSArray
                             self.tableView.reloadData()
-
                     }
                 }
         });
         task.resume()
     }
-
 }
